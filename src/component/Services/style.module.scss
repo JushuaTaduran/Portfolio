@@ -26,7 +26,7 @@
   @apply border-2 border-[#121212] lg:bg-[#fdfdfd] bg-[#121212] dark:bg-[#fdfdfd] dark:lg:bg-[#121212] dark:text-[#121212] dark:lg:text-[#fdfdfd] text-[#fdfdfd] lg:text-[#121212] dark:border-[#fdfdfd] dark:shadow-light shadow-dark;
 
   & h3 {
-    @apply bg-[#718096] lg:bg-[#B6FC63] text-[#fdfdfd] lg:text-[#121212] dark:lg:bg-[#718096] dark:text-[#121212] dark:lg:text-[#fdfdfd];
+    @apply bg-[#718096] lg:bg-[#B6FC63] text-[#fdfdfd] lg:text-[#121212] dark:bg-[#B6FC63] dark:lg:bg-[#718096] dark:text-[#121212] dark:lg:text-[#fdfdfd];
   }
 
   & .icon {
@@ -37,7 +37,7 @@
     @apply bg-[#fdfdfd] lg:bg-[#121212] dark:bg-[#121212] dark:lg:bg-[#fdfdfd] lg:text-[#fdfdfd] text-[#121212] dark:lg:text-[#121212] dark:text-[#fdfdfd];
 
     & h3 {
-      @apply bg-[#B6FC63] lg:bg-[#718096] text-[#121212] lg:text-[#fdfdfd] dark:lg:bg-[#B6FC63] dark:text-[#fdfdfd] dark:lg:text-[#121212];
+      @apply bg-[#B6FC63] lg:bg-[#718096] text-[#121212] lg:text-[#fdfdfd] dark:bg-[#718096] dark:lg:bg-[#B6FC63] dark:text-[#fdfdfd] dark:lg:text-[#121212];
     }
 
     & .icon {
