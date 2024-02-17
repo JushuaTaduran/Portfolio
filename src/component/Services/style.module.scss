@@ -1,0 +1,47 @@
+.item1 {
+  @apply border-2 border-[#121212] dark:border-[#fdfdfd] dark:shadow-light shadow-dark;
+
+  & h3 {
+    @apply bg-[#B6FC63] text-[#121212] dark:bg-[#718096] dark:text-[#fdfdfd];
+  }
+
+  & .icon {
+    @apply text-[#121212] dark:text-[#B6FC63];
+  }
+
+  &:last-of-type {
+    @apply bg-[#121212] dark:bg-[#fdfdfd] text-[#fdfdfd] dark:text-[#121212];
+
+    & h3 {
+      @apply bg-[#718096] text-[#fdfdfd] dark:bg-[#B6FC63] dark:text-[#121212];
+    }
+
+    & .icon {
+      @apply text-[#B6FC63] dark:text-[#121212];
+    }
+  }
+}
+
+.item2 {
+  @apply border-2 border-[#121212] lg:bg-[#fdfdfd] bg-[#121212] dark:bg-[#fdfdfd] dark:lg:bg-[#121212] dark:text-[#121212] dark:lg:text-[#fdfdfd] text-[#fdfdfd] lg:text-[#121212] dark:border-[#fdfdfd] dark:shadow-light shadow-dark;
+
+  & h3 {
+    @apply bg-[#718096] lg:bg-[#B6FC63] text-[#fdfdfd] lg:text-[#121212] dark:lg:bg-[#718096] dark:text-[#121212] dark:lg:text-[#fdfdfd];
+  }
+
+  & .icon {
+    @apply text-[#B6FC63] lg:text-[#121212] dark:text-[#121212] dark:lg:text-[#B6FC63];
+  }
+
+  &:first-of-type {
+    @apply bg-[#fdfdfd] lg:bg-[#121212] dark:bg-[#121212] dark:lg:bg-[#fdfdfd] lg:text-[#fdfdfd] text-[#121212] dark:lg:text-[#121212] dark:text-[#fdfdfd];
+
+    & h3 {
+      @apply bg-[#B6FC63] lg:bg-[#718096] text-[#121212] lg:text-[#fdfdfd] dark:lg:bg-[#B6FC63] dark:text-[#fdfdfd] dark:lg:text-[#121212];
+    }
+
+    & .icon {
+      @apply lg:text-[#B6FC63] text-[#121212] dark:text-[#B6fc63] dark:lg:text-[#121212];
+    }
+  }
+}
