@@ -1,10 +1,10 @@
 import React from "react";
 
-import PDF from "../../assets/CV_Taduran.pdf";
+import PDF from "../../assets/JSTaduran_Resume.pdf";
 
 const Resume = () => {
   return (
-    <div className="h-screen flex justify-center items-center">
+    <div className="flex items-center justify-center h-screen">
       <iframe className="w-full h-full" src={PDF}></iframe>
     </div>
   );

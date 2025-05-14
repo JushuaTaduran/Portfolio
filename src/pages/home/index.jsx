@@ -1,16 +1,13 @@
 import Contact from "../../component/Contact";
 import Footer from "../../component/Footer";
-import Gallery from "../../component/Gallery";
 import Hero from "../../component/Hero";
 import Services from "../../component/Services";
-import Testimonials from "../../component/Testimonials";
 
 const Home = () => {
   return (
-    <main className="bg-[#fdfdfd] dark:bg-[#121212] dark:text-[#dbdbdb]">
+    <main className="bg-background text-text">
       <Hero />
       <Services />
-      <Gallery />
       <Contact />
       <Footer />
     </main>

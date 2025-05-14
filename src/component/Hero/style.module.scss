@@ -1,7 +1,7 @@
 .link {
-  @apply border-2 border-[#121212] dark:border-[#fdfdfd] hover:bg-[#121212] hover:dark:bg-[#fdfdfd] hover:text-[#fdfdfd] hover:dark:text-[#121212] transition-all px-4 py-2 rounded-sm duration-500;
+  @apply border-2 border-[#4f46e5] dark:border-[#8b5cf6] dark:bg-[#8b5cf6] hover:bg-[#4f46e5] hover:dark:bg-[#18181b] hover:text-[#f4f4f5] transition-all px-4 py-2 rounded-sm duration-500;
 }
 
 .socials {
-  @apply hover:text-[#718096] dark:hover:text-[#B6FC63] hover:scale-125 transition-all duration-500;
+  @apply hover:text-accent hover:scale-125 transition-all duration-500;
 }

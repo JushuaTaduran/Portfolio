@@ -3,24 +3,45 @@ import { useState } from "react";
 import style from "./style.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircle, faCircleRight } from "@fortawesome/free-solid-svg-icons";
+import Fig01 from "../../assets/img/Experiences/Fig01.png";
+import Fig02 from "../../assets/img/Experiences/Fig02.png";
+import Fig03 from "../../assets/img/Experiences/Fig03.jpg";
 
 const Experience = () => {
   const [hoveredItemIndex, setHoveredItemIndex] = useState(null);
 
   const experienceList = [
     {
-      img: "https://i.pinimg.com/originals/82/c6/5b/82c65b9bb0a75026fc4c82a438b4cc9b.jpg",
-      alt: "",
+      img: Fig01,
+      alt: "Fig01",
       date: "July 2023 - Present",
-      title: "Software Developer | Eduksine",
+      title: "Software Developer | Eduksine Studios",
       description:
         "I utilize React, TypeScript, Tailwind, Sass, and MySQL to innovate and enhance our Software, ensuring a seamless and immersive experience for our users.",
-      items: ["React", "TypeScript", "Tailwind", "Sass", "MySQL"],
+      items: [
+        "React",
+        "TypeScript",
+        "Tailwind",
+        "Sass",
+        "MySQL",
+        "GraphQL",
+        "Git",
+      ],
       link: "https://app.eduksine.com/browse",
     },
     {
-      img: "https://cdn.pixabay.com/photo/2017/03/16/21/18/logo-2150297_640.png",
-      alt: "",
+      img: Fig02,
+      alt: "Fig02",
+      date: "July 2024 - August 2024",
+      title: "Summer Web Developer Intern | Wireless Access for Health (WAH)",
+      description:
+        "As a summer intern at Wireless Access for Health, I spent two monthsdeveloping payroll and receipt functionalities for their website using Laravel, MySQL, and learning to utilize GitHub for version control.",
+      items: ["Laravel", "PHP", "MySQL", "Git"],
+      link: "https://wah.ph/",
+    },
+    {
+      img: Fig03,
+      alt: "Fig03",
       date: "May 2021 - Oct 2022",
       title: "Social Media Manager | GameFi.io",
       description:
@@ -31,7 +52,8 @@ const Experience = () => {
   ];
 
   return (
-    <div className="w-full flex flex-col gap-8 mb-8 text-sm lg:text-base">
+    <div className="flex flex-col w-full gap-8 mb-8 text-sm lg:text-base">
+      <h1 className="font-bold">WORK EXPERIENCES</h1>
       {experienceList.map((experience, index) => (
         <div key={index}>
           <a
@@ -43,19 +65,19 @@ const Experience = () => {
             rel="noreferrer"
           >
             <p className="w-full lg:w-1/2">{experience.date}</p>
-            <div className="flex flex-col gap-2 w-full">
-              <div className="flex gap-4 items-center">
+            <div className="flex flex-col w-full gap-4">
+              <div className="flex items-center gap-4">
                 <h3 className="font-medium text-md lg:text-lg ">
                   {experience.title}
                 </h3>
                 <img
-                  className="rounded-full w-8 h-8 object-cover"
+                  className="object-cover w-8 h-8 rounded-full"
                   src={experience.img}
                   alt={experience.alt}
                 />
               </div>
               <p>{experience.description}</p>
-              <div className="flex gap-4 flex-wrap">
+              <div className="flex flex-wrap gap-4">
                 {experience.items.map((item, index) => (
                   <div key={index} className={`${style.item}`}>
                     {item}
@@ -63,14 +85,14 @@ const Experience = () => {
                 ))}
               </div>
             </div>
-            <div className="w-10 h-10 flex items-center justify-center absolute top-0 right-0">
+            <div className="absolute top-0 right-0 flex items-center justify-center w-10 h-10">
               {hoveredItemIndex === index && (
-                <div className="text-2xl -rotate-45 text-[#718096] dark:text-[#B6FC63]">
+                <div className="text-2xl -rotate-45 text-accent">
                   <FontAwesomeIcon icon={faCircleRight} />
                 </div>
               )}
               {hoveredItemIndex !== index && (
-                <div className="text-lg text-[#718096] dark:text-[#B6FC63]">
+                <div className="text-lg text-accent">
                   <FontAwesomeIcon icon={faCircle} />
                 </div>
               )}

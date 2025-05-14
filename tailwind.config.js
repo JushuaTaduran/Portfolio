@@ -1,8 +1,17 @@
+import { text } from "@fortawesome/fontawesome-svg-core";
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./src/**/*.{html,js,jsx,sass,scss}"],
   theme: {
     extend: {
+      colors: {
+        text: "var(--text)",
+        primary: "var(--primary)",
+        secondary: "var(--secondary)",
+        background: "var(--background)",
+        accent: "var(--accent)",
+      },
       boxShadow: {
         dark: "0px 10px 0px 0.1px rgba(12, 12, 12, 1)",
         light: "0px 10px 0px 0.1px rgba(253,253, 253, 1)",
